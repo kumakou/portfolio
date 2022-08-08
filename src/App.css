@@ -1,38 +1,207 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Dongle:wght@300;400&display=swap');
+h2,h1{
+  font-family: 'Dongle', sans-serif;
+  margin: 0;
+  font-size: 60px;
+  font-weight: 500;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+p {
+  margin: 0;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+header{
+  /* background-image: url(./asset/unsplash_78A265wPiO4.png);*/
+  height: 100vh;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  background: #ddd url(./asset/unsplash_78A265wPiO4.png) no-repeat center center;
+  background-size: cover;
+  text-align: center;
+  justify-content: space-between;
+  padding: 0 0 20px;
+}
+nav {
+  color: white;
+  text-align: center;
+}
+nav ul{
+  display: flex;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
+  margin: 0 auto;
+
+  padding: 0;
+}
+nav a{
+  text-decoration: none;
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
+nav li{
+  list-style: none;
+  text-align: center;
+  padding: 20px;
+}
+header h1{
+  color: white;
+  font-size: 40px;
+  display: block;
+  font-size: 90pt;
+  text-align: center;
+  font-weight: 100;
+}
+.About{
+  padding: 70px 100px 70px;
+  background-color: #9F9F9F;
+  display: flex;
+}
+.About p{
+  color: white;
+  font-size:18px;
+  margin: 0;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.About h2 {
+  color: white;
+  font-size: 80px;
+  font-weight: 0;
 }
+.About .kuma {
+  width: 250px;
+  height: 250px;
+  margin: 80px 0;
+  border-radius: 50%;
+  background-image: url("./asset/S__26058758.jpg");
+}
+
+.sns {
+  margin: 20px;
+  display: flex;
+  justify-content: flex-end;
+}
+
+.sns p {
+ padding: 10px 40px 10px 10px;
+}
+
+.sns img {
+  width: 30px;
+  padding: 5px;
+}
+
+.about-text{
+  padding: 0px 120px;
+}
+
+div.about-text h2{
+  text-align: center;
+  margin: 0;
+  font-size: 80px;
+  font-weight: 0;
+}
+
+.Work {
+  background-color: #EBEEEE;
+  padding: 5vh 10vh 10vh;
+}
+.Work h2{
+  color: #666666;
+  text-align: center;
+  font-size: 80px;
+  font-weight: 0;
+}
+
+.works{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 10px 10px;
+  place-content: center;
+}
+
+.works :first-child {
+  align-self: center;
+}
+
+
+.Skill{
+  background-color: white;
+  text-align: center;
+  padding: 5vh 10vh 10vh;
+}
+table{
+  width: 100%;
+  padding: 10px;
+}
+
+.Skill h2 {
+  font-size: 80px;
+  font-weight: 0;
+}
+.Skill h2, .Skill table{
+color: #666666;
+text-align: center;
+border-collapse: collapse;
+border-spacing: 0;
+}
+
+th {
+  padding: 10px;
+  border-bottom: solid 4px #778ca3;
+  color: #778ca3
+}
+
+td {
+  padding: 10px;
+  border-bottom: solid 1px #778ca3;
+}
+
+.Contact {
+  background-color: #9F9F9F;
+  text-align: center;
+  padding: 3vh 10vh 10vh;
+}
+.Contact p {
+  color: white;
+  text-align: center;
+}
+
+
+.Contact h2{
+  color: white;
+  text-align: center;
+}
+
+.Contact label{
+  color: white;
+}
+.button_wrapper {
+  text-align: center;
+}
+
+input {
+  width: 400px;
+}
+
+.submit {
+  margin: 20px;
+}
+
+.Contact div{
+  margin: 20px 0 px;
+}
+
+.Contact p {
+  margin: 20px;
+}
+
+.toiawase {
+  height: 100px
+}
+footer{
+  background-color: #707070;
+  padding: 40px;
+}
+footer p{
+  color: white;
+  text-align: center;
+  font-size: 18px;
+}
+
